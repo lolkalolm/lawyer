@@ -1,0 +1,21 @@
+.container{
+    margin: 0 auto;
+}
+@media screen and (min-width: 375px){
+	.container{
+		width: 362px;
+	}
+}
+
+@media screen and (min-width: 744px){
+   .container{
+		width: 660px;
+	 }
+ }
+
+ 
+ @media screen and (min-width: 1199px){
+   .container{
+		width: 1284px;
+	 }
+ }
