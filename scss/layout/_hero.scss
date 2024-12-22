@@ -6,6 +6,7 @@ line-height: 90px;
 letter-spacing: -0.02em;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
+color:#FFFFFF ;
 }
 .hero-text{
     font-family: Abel;
@@ -15,26 +16,20 @@ line-height: 40px;
 letter-spacing: -0.02em;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-}
-.hero-sec-text{
-    font-family: Abel;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-.hero-thi-text{
-    font-family: Abel;
-font-size: 36px;
-font-weight: 400;
-line-height: 36px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+color:#FFFFFF ;
 }
 .hero{
     padding-top: 122px;
     padding-bottom: 76px;
+    background-image: url(../../img/Rectangle\ 90.png);
+}
+.hero-title-span{
+    font-family: Judson;
+font-size: 90px;
+font-weight: 400;
+line-height: 90px;
+letter-spacing: -0.02em;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color:#1668E3 ;
 }
