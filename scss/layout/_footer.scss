@@ -1,51 +1,162 @@
 .contacts-list-text{
-font-family: Abel;
+
+    color:#FFFFFF66 ;
+    }
+    
+    .contacts-list-link{
+    
+    color:#FFFFFF ;
+    }
+    
+    .footer-text{
+    color:#FFFFFF ;
+    display: flex;
+    justify-content: center;
+    }
+    .footer{
+        background-color: #151515;
+    }
+    .footer-img-div{
+        display: flex;
+        justify-content: center;
+    }
+    .contacts-texts{
+        display: flex;
+    }
+    .contacts-links{
+        display: flex;
+    }
+    .footer-list{
+        display: flex;
+        justify-content: end;
+}
+@media screen and (min-width: 375px){
+    .contacts-list-text{
+        font-family: Abel;
+font-size: 12px;
+font-weight: 400;
+line-height: 14.4px;
+letter-spacing: -0.02em;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+    }
+    .contacts-list-link{
+        font-family: Abel;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;        
+    }
+    .footer-text{
+        font-family: Abel;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15.12px;
+        letter-spacing: -0.03em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    .footer-img-div{
+ display: table-header-group;
+    }
+    .contacts-texts{
+        gap: 132px;
+    }
+    .contacts-links{
+        gap: 64px;
+    }
+    .footer-list{
+       gap: 15px;
+       padding-bottom: 32px;
+    }
+}
+@media screen and (min-width: 744px){
+    .contacts-list-text{
+        font-family: Abel;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;        
+    }
+    .contacts-list-link{
+        font-family: Abel;
 font-size: 16px;
 font-weight: 400;
 line-height: 19.2px;
 letter-spacing: -0.02em;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color:#FFFFFF66 ;
-}
 
-.contacts-list-link{
-font-family: Abel;
-font-size: 24px;
-font-weight: 400;
-line-height: 28.8px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color:#FFFFFF ;
-}
-
-.footer-text{
-font-family: Abel;
+    }
+    .footer-text{
+        font-family: Abel;
 font-size: 20px;
 font-weight: 400;
 line-height: 25.2px;
 letter-spacing: -0.03em;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-color:#FFFFFF ;
-display: flex;
-justify-content: center;
+
+    }
+    .footer-img-div{
+       gap: 40px;
+       padding-bottom: 6px;
+    }
+    .contacts-texts{
+        gap: 101px;
+    }
+    .contacts-links{
+        gap:101px ;
+    }
+    .footer-list{
+        gap: 15px;
+        padding-bottom: 24px;
+    }
 }
-.footer{
-    background-color: #151515;
+@media screen and (min-width: 1199px){
+.contacts-list-text{
+    font-family: Abel;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+ .contacts-list-link{
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+ }
+ .footer-text{
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -0.03em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 .footer-img-div{
-    display: flex;
     gap: 29px;
-    justify-content: center;
     padding-bottom: 25px;
 }
 .contacts-texts{
-    display: flex;
     gap: 150px;
 }
 .contacts-links{
-    display: flex;
     gap: 40px;
+}
+.footer-list{
+    gap: 15px;
+    padding-bottom: 41px;
+}
 }
