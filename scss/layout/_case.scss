@@ -1,34 +1,203 @@
 .case-title{
-    font-family: Judson;
-font-size: 54px;
-font-weight: 400;
-line-height: 54px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+
 color:#FFFFFF ;
+@include mob(375px){
+    font-family: Judson;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    padding-top: 55px;  
+    padding-bottom: 41px;
+}
+@include tab(744px){
+    font-family: Judson;
+    font-size: 57px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+        padding-bottom: 47px;
+        padding-top: 121px;
+}
+@include desc(1199px){
+    font-family: Judson;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding-bottom: 69px;
+    padding-top: 89px;
+}
 }
 .case-list-text{
+
+color:#FFFFFF ;
+@include mob(375px){
     font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color:#151515 ;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+     padding-top: 48px;       
+     padding-left: 16px;
+    padding-right: 16px;
+     max-width: 180px;
+}
+@include tab(744px){
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    max-width: 240px;
+padding-top: 48px;
+padding-left: 16px;
+padding-right: 16px;
+}
+@include desc(1199px){
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    align-items: start;
+    max-width: 350px;
+ padding-top: 58px;
+ padding-left: 31px;
+padding-right: 31px;
+}
 }
 .case-list-btn{
-    font-family: Abel;
-font-size: 24px;
-font-weight: 400;
-line-height: 28.8px;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+ 
 color:#FFFFFF ;
+background-color: #1668E3;
+border-radius: 40px;
+@include mob(375px){
+    font-family: Abel;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    max-width:174px ;
+    margin-bottom:35px ;
+    margin-left: 14px;
 }
+@include tab(744px){
+    font-family: Abel;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 34px;
+    max-width: 174px;
+    margin-left: 13px;
+}
+@include desc(1199px){
+    font-family: Abel;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 53px;
+    max-width: 364px;
+    margin-left: 24px;
+}
+}
+.case-list{
+    @include mob(375px){
+        padding-bottom: 140px;
+    }
+    @include tab(744px){
+        display: flex;
+        gap: 12px;
+        padding-bottom: 121px;
+    }
+    @include desc(1199px){
+        display: flex;
+        gap: 22px;
+        padding-bottom: 147px;
+    }   
+}
+
 .case{
 background-image: url(../../img/Rectangle\ 90.png);
+@include mob(375px){
+
+}
+@include tab(744px){
+
+}
+@include desc(1199px){
+
+}
 }
 .case-list-item{
     background-color: #FFFFFF26;
+    @include mob(375px){
+        border-radius: 20px;
+        margin-bottom: 24px;
+        width: 212px;
+        margin-left: 75px;
+    }
+    @include tab(744px){
+        margin: 0 auto;
+        width: 212px;
+    }
+    @include desc(1199px){
+        width: 412px;
+        margin: 0 auto;
+    }
+
 }
+.case-list-item:hover{
+    background-color: #FFFFFF;
+    .case-list-text{
+        color: #151515;
+    }
+}
+.case-list-first-text{
+    @include mob(375px){
+        padding-bottom: 43px;
+    }
+    @include tab(744px){
+        padding-bottom: 43px;
+    }
+    @include desc(1199px){
+        padding-bottom: 73px;
+    }
+    }
+    .case-list-sec-text{
+        @include mob(375px){
+            padding-bottom: 43px;
+        }
+        @include tab(744px){
+            padding-bottom: 43px;
+        }
+        @include desc(1199px){
+            padding-bottom: 73px;
+        }
+    }
+    .case-list-small-text{
+        @include mob(375px){
+            padding-bottom: 158px;
+        }
+        @include tab(744px){
+            padding-bottom: 158px;
+        }
+        @include desc(1199px){
+            padding-bottom: 157px;
+        }
+    }
+

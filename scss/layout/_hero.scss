@@ -1,77 +1,101 @@
 .hero-title{
 color:#FFFFFF ;
+@include mob(375px){
+    font-family: Judson;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 329px;
+    max-width: 309px;
+}
+@include tab(744px){
+    font-family: Judson;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; 
+    margin-bottom: 299px;   
+    max-width: 448px;
+}
+@include desc(1199px){
+    font-family: Judson;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 90px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 600px;
+    margin-bottom: 266px;
+}
 }
 .hero-text{
 color:#FFFFFF ;
+@include mob(375px){
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 100px;
+}
+@include tab(744px){
+    font-family: Abel;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 155px;
+}
+@include desc(1199px){
+    font-family: Abel;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 320px;
+}
 }
 .hero{
     background-image: url(../../img/Rectangle\ 90.png);
+    @include mob(375px){
+        padding-top: 122px;
+    padding-bottom: 76px;
+    }
+    @include tab(744px){
+        padding-top:166px ;
+        padding-bottom:33px ;
+    }
+    @include desc(1199px){
+        padding-top:154px ;
+        padding-bottom:64px ;
+    }
 }
 .hero-title-span{
 
 color:#1668E3 ;
-}
-
-.hero-text-wrap{
-    display: flex;
-    justify-content: center;
-    
-}
-
-@media screen and (min-width: 375px){
-    .hero-title{
-        font-family: Judson;
-font-size: 48px;
-font-weight: 400;
-line-height: 48px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-margin-bottom: 329px;
-max-width: 309px;
-    }
-    .hero-text{
-        font-family: Abel;
-font-size: 20px;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-max-width: 100px;
-    }
-  .hero-title-span{
+@include mob(375px){
     font-family: Judson;
-font-size: 48px;
-font-weight: 400;
-line-height: 48px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-  }
-  .hero{
-    padding-top: 122px;
-    padding-bottom: 76px;
-  }
-  .hero-text-wrap{
-    gap: 16px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
-
-}
-@media screen and (min-width: 744px){
-
-    .hero-title{
-        font-family: Judson;
-        font-size: 64px;
-        font-weight: 400;
-        line-height: 64px;
-        letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none; 
-        margin-bottom: 299px;   
-        max-width: 448px;
-    }
-   .hero-title-span{font-family: Judson;
+@include tab(744px){
+    font-family: Judson;
     font-family: Judson;
     font-size: 64px;
     font-weight: 400;
@@ -80,66 +104,29 @@ text-decoration-skip-ink: none;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    }
-    .hero-text{
-        font-family: Abel;
-        font-size: 26px;
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        max-width: 155px;
-    }
-    .hero{
-        padding-top:166px ;
-        padding-bottom:33px ;
-
-        .hero-text-wrap{
-            gap: 30px;
-        }
-    }
-
 }
-@media screen and (min-width: 1199px){
-    
-    .hero-title{
-        font-family: Judson;
-font-size: 90px;
-font-weight: 400;
-line-height: 90px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-max-width: 600px;
-margin-bottom: 266px;
-    }
-    .hero-text{
-        font-family: Abel;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    max-width: 320px;
-    
-    }
-    .hero-title-span{
-        font-family: Judson;
+@include desc(1199px){
+    font-family: Judson;
     font-size: 90px;
     font-weight: 400;
     line-height: 90px;
     letter-spacing: -0.02em;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    }
-    .hero{
-        padding-top:154px ;
-        padding-bottom:64px ;
-    }
-    .hero-text-wrap{
-        gap: 46px;
-    }
-
 }
+}
+
+.hero-text-wrap{
+    display: flex;
+    justify-content: center;
+    @include mob(375px){
+        gap: 16px;
+}
+@include tab(744px){
+    gap: 30px;
+}
+@include desc(1199px){
+    gap: 46px;
+}
+}
+

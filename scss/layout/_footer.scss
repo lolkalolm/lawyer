@@ -1,55 +1,72 @@
 .contacts-list-text{
 
     color:#FFFFFF66 ;
-    }
-    
-    .contacts-list-link{
-    
-    color:#FFFFFF ;
-    }
-    
-    .footer-text{
-    color:#FFFFFF ;
-    display: flex;
-    justify-content: center;
-    }
-    .footer{
-        background-color: #151515;
-    }
-    .footer-img-div{
-        display: flex;
-        justify-content: center;
-    }
-    .contacts-texts{
-        display: flex;
-    }
-    .contacts-links{
-        display: flex;
-    }
-    .footer-list{
-        display: flex;
-        justify-content: end;
-}
-@media screen and (min-width: 375px){
-    .contacts-list-text{
+    @include mob(375px){
         font-family: Abel;
-font-size: 12px;
-font-weight: 400;
-line-height: 14.4px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
     }
-    .contacts-list-link{
+    @include tab(744px){
+        font-family: Abel;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;       
+    }
+    @include desc(1199px){
         font-family: Abel;
         font-size: 16px;
         font-weight: 400;
         line-height: 19.2px;
         letter-spacing: -0.02em;
         text-underline-position: from-font;
-        text-decoration-skip-ink: none;        
+        text-decoration-skip-ink: none;
     }
+    }
+    
+    .contacts-list-link{
+    
+    color:#FFFFFF ;
+    @include mob(375px){
+        font-family: Abel;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    @include tab(744px){
+        font-family: Abel;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    @include desc(1199px){
+        font-family: Abel;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28.8px;
+        letter-spacing: -0.02em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    }
+    
     .footer-text{
+    color:#FFFFFF ;
+    display: flex;
+    justify-content: center;
+    @include mob(375px){
         font-family: Abel;
         font-size: 12px;
         font-weight: 400;
@@ -57,106 +74,107 @@ text-decoration-skip-ink: none;
         letter-spacing: -0.03em;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        padding-bottom: 30px;
     }
-    .footer-img-div{
- display: table-header-group;
-    }
-    .contacts-texts{
-        gap: 132px;
-    }
-    .contacts-links{
-        gap: 64px;
-    }
-    .footer-list{
-       gap: 15px;
-       padding-bottom: 32px;
-    }
-}
-@media screen and (min-width: 744px){
-    .contacts-list-text{
+    @include tab(744px){
         font-family: Abel;
-        font-size: 12px;
+        font-size: 20px;
         font-weight: 400;
-        line-height: 14.4px;
-        letter-spacing: -0.02em;
+        line-height: 25.2px;
+        letter-spacing: -0.03em;
         text-underline-position: from-font;
-        text-decoration-skip-ink: none;        
+        text-decoration-skip-ink: none;
+        padding-bottom: 35px;
     }
-    .contacts-list-link{
+    @include desc(1199px){
         font-family: Abel;
-font-size: 16px;
-font-weight: 400;
-line-height: 19.2px;
-letter-spacing: -0.02em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25.2px;
+        letter-spacing: -0.03em;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        padding-bottom: 52px;
     }
-    .footer-text{
-        font-family: Abel;
-font-size: 20px;
-font-weight: 400;
-line-height: 25.2px;
-letter-spacing: -0.03em;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+    }
+    .footer{
+        background-color: #151515;
     }
     .footer-img-div{
-       gap: 40px;
-       padding-bottom: 6px;
+        display: flex;
+        justify-content: center;
+        @include tab(744px){
+            gap: 40px;
+            padding-bottom: 6px;
+        }
+        @include desc(1199px){
+            gap: 29px;
+            padding-bottom: 25px;
+        }
     }
     .contacts-texts{
-        gap: 101px;
+        display: flex;
+        @include mob(375px){
+            gap: 132px;
+        }
+        @include tab(744px){
+            gap: 101px;
+        }
+        @include desc(1199px){
+            gap: 150px;
+        }
     }
     .contacts-links{
-        gap:101px ;
+        display: flex;
+        @include mob(375px){
+            gap: 64px;
+            margin-top:15px ;
+        }
+        @include tab(744px){
+            gap:31px ;
+            margin-top: 15px;
+        }
+        @include desc(1199px){
+            gap: 40px;
+            margin-top: 10px;
+        }
     }
     .footer-list{
-        gap: 15px;
-        padding-bottom: 24px;
+        display: flex;
+        justify-content: end;
+        @include mob(375px){
+            padding-top: 83px;
+            gap: 15px;
+            padding-bottom: 32px;
+        }
+        @include tab(744px){
+            gap: 15px;
+            padding-bottom: 24px;
+        }
+        @include desc(1199px){
+            gap: 15px;
+            padding-bottom: 41px;
+        }
+}
+        .contacts-list{
+            @include mob(375px){
+                padding-top: 32px;
+            }
+            @include tab(744px){
+                padding-top: 67px;
+            }
+            @include desc(1199px){
+                padding-top: 50px;
+            }
+        }
+ .footer-img{
+    @include mob(375px){
+        display: none;
     }
-}
-@media screen and (min-width: 1199px){
-.contacts-list-text{
-    font-family: Abel;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.2px;
-    letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
- .contacts-list-link{
-    font-family: Abel;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28.8px;
-    letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    @include tab(744px){
+    display: inline;
+    }
+    @include desc(1199px){
+    display: inline;
+    }
  }
- .footer-text{
-    font-family: Abel;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 25.2px;
-    letter-spacing: -0.03em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-}
-.footer-img-div{
-    gap: 29px;
-    padding-bottom: 25px;
-}
-.contacts-texts{
-    gap: 150px;
-}
-.contacts-links{
-    gap: 40px;
-}
-.footer-list{
-    gap: 15px;
-    padding-bottom: 41px;
-}
-}
