@@ -132,15 +132,15 @@ border-radius: 40px;
 }
 
 .case{
-background-image: url(../../img/Rectangle\ 90.png);
-@include mob(375px){
 
+@include mob(375px){
+background-image: url(../../img/phone-bg3-x1.jpg);
 }
 @include tab(744px){
-
+background-image: url(../../img/tab-bg3-x1.jpg);
 }
 @include desc(1199px){
-
+background-image: url(../../img/BG3-desk-x1.jpg);
 }
 }
 .case-list-item{
