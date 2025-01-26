@@ -1,69 +1,54 @@
 .hero-title{
 color:#FFFFFF ;
+font-family: Judson;
+font-weight: 400;
 @include mob(375px){
-    font-family: Judson;
+
     font-size: 48px;
-    font-weight: 400;
     line-height: 48px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     margin-bottom: 329px;
     max-width: 309px;
 }
 @include tab(744px){
-    font-family: Judson;
+
     font-size: 64px;
-    font-weight: 400;
     line-height: 64px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none; 
     margin-bottom: 299px;   
     max-width: 448px;
 }
 @include desc(1199px){
-    font-family: Judson;
+    
     font-size: 90px;
-    font-weight: 400;
     line-height: 90px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     max-width: 600px;
     margin-bottom: 266px;
 }
 }
 .hero-text{
 color:#FFFFFF ;
+font-family: Abel;
 @include mob(375px){
-    font-family: Abel;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     max-width: 100px;
 }
 @include tab(744px){
-    font-family: Abel;
     font-size: 26px;
     font-weight: 400;
     line-height: 26px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     max-width: 155px;
 }
 @include desc(1199px){
-    font-family: Abel;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     max-width: 320px;
 }
 }
@@ -71,50 +56,38 @@ color:#FFFFFF ;
     @include mob(375px){
         padding-top: 122px;
     padding-bottom: 76px;
-    background-image: url(../../img/phone-bg1-x1.jpg);
+    background-image: url("../../img/phone-bg1-x1.jpg");
     }
     @include tab(744px){
         padding-top:166px ;
         padding-bottom:33px ;
-        background-image: url(../../img/tab-bg1-x1.jpg);
+        background-image: url("../../img/tab-bg1-x1.jpg");
     }
     @include desc(1199px){
         padding-top:154px ;
         padding-bottom:64px ;
-        background-image: url(../../img/BG1-desk-x1.jpg);
+        background-image: url("../../img/BG1-desk-x1.jpg");
     }
 }
 .hero-title-span{
-
-color:#1668E3 ;
-@include mob(375px){
     font-family: Judson;
+color:#1668E3 ;
+font-weight: 400;
+@include mob(375px){
     font-size: 48px;
-    font-weight: 400;
     line-height: 48px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 @include tab(744px){
-    font-family: Judson;
-    font-family: Judson;
     font-size: 64px;
-    font-weight: 400;
     line-height: 64px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 
 }
 @include desc(1199px){
-    font-family: Judson;
     font-size: 90px;
-    font-weight: 400;
     line-height: 90px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 }
 

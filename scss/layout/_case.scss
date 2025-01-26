@@ -1,74 +1,54 @@
 .case-title{
-
-color:#FFFFFF ;
-@include mob(375px){
     font-family: Judson;
+color:#FFFFFF ;
+font-weight: 400;
+
+@include mob(375px){
     font-size: 54px;
-    font-weight: 400;
     line-height: 54px;
-    letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none; 
+    letter-spacing: -0.02em; 
     padding-top: 55px;  
     padding-bottom: 41px;
 }
 @include tab(744px){
-    font-family: Judson;
     font-size: 57px;
-    font-weight: 400;
     line-height: 54px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
         padding-bottom: 47px;
         padding-top: 121px;
 }
 @include desc(1199px){
-    font-family: Judson;
     font-size: 60px;
-    font-weight: 400;
     line-height: 54px;
     letter-spacing: -0.02em;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     padding-bottom: 69px;
     padding-top: 89px;
 }
 }
 .case-list-text{
-
-color:#FFFFFF ;
-@include mob(375px){
     font-family: Inter;
+color:#FFFFFF ;
+font-weight: 400;
+
+@include mob(375px){
     font-size: 13px;
-    font-weight: 400;
     line-height: 19.5px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
      padding-top: 48px;       
      padding-left: 16px;
     padding-right: 16px;
      max-width: 180px;
 }
 @include tab(744px){
-    font-family: Inter;
     font-size: 13px;
-    font-weight: 400;
     line-height: 19.5px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none; 
     max-width: 240px;
 padding-top: 48px;
 padding-left: 16px;
 padding-right: 16px;
 }
 @include desc(1199px){
-    font-family: Inter;
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     align-items: start;
     max-width: 350px;
  padding-top: 58px;
@@ -134,13 +114,13 @@ border-radius: 40px;
 .case{
 
 @include mob(375px){
-background-image: url(../../img/phone-bg3-x1.jpg);
+background-image: url("../../img/phone-bg3-x1.jpg");
 }
 @include tab(744px){
-background-image: url(../../img/tab-bg3-x1.jpg);
+background-image: url("../../img/tab-bg3-x1.jpg");
 }
 @include desc(1199px){
-background-image: url(../../img/BG3-desk-x1.jpg);
+background-image: url("../../img/BG3-desk-x1.jpg");
 }
 }
 .case-list-item{
