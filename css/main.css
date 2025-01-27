@@ -188,22 +188,6 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media screen and (min-width: 375px) {
-  .case {
-    background-image: url("../../img/phone-bg3-x1.jpg");
-  }
-}
-@media screen and (min-width: 744px) {
-  .case {
-    background-image: url("../../img/tab-bg3-x1.jpg");
-  }
-}
-@media screen and (min-width: 1199px) {
-  .case {
-    background-image: url("../../img/BG3-desk-x1.jpg");
-  }
-}
-
 .case-list-item {
   background-color: rgba(255, 255, 255, 0.1490196078);
 }
@@ -611,21 +595,96 @@ h1, h2, h3, h4, h5, h6, p {
   .hero {
     padding-top: 122px;
     padding-bottom: 76px;
-    background-image: url("../../img/phone-bg1-x1.jpg");
+    background-image: url("../phone-img/phone-x1-hero.jpg");
+  }
+  @supports (background-image: url("../phone-img/phone-x1-hero.webp")) {
+    .hero {
+      background-image: url("../phone-img/phone-x1-hero.webp");
+    }
+  }
+}
+@media screen and (min-width: 375px) and (min-device-pixel-ratio: 2), screen and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 375px) and (min-resolution: 192dpi), screen and (min-width: 375px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../phone-img/phone-x2-hero.jpg");
+  }
+  @supports (background-image: url("../phone-img/phone-x2-hero.webp")) {
+    .hero {
+      background-image: url("../phone-img/phone-x2-hero.webp");
+    }
+  }
+}
+@media screen and (min-width: 375px) and (min-device-pixel-ratio: 3), screen and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 375px) and (min-resolution: 288dpi), screen and (min-width: 375px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: url("../phone-img/phone-x3-hero.jpg");
+  }
+  @supports (background-image: url("../phone-img/phone-x3-hero.webp")) {
+    .hero {
+      background-image: url("../phone-img/phone-x3-hero.webp");
+    }
   }
 }
 @media screen and (min-width: 744px) {
   .hero {
     padding-top: 166px;
     padding-bottom: 33px;
-    background-image: url("../../img/tab-bg1-x1.jpg");
+    background-image: url("../tab-img/tab-x1-hero.jpg");
+  }
+  @supports (background-image: url("../tab-img/tab-x1-hero.webp")) {
+    .hero {
+      background-image: url("../tab-img/tab-x1-hero.webp");
+    }
+  }
+}
+@media screen and (min-width: 744px) and (min-device-pixel-ratio: 2), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 744px) and (min-resolution: 192dpi), screen and (min-width: 744px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../tab-img/tab-x2-hero.jpg");
+  }
+  @supports (background-image: url("../tab-img/tab-x2-hero.webp")) {
+    .hero {
+      background-image: url("../tab-img/tab-x2-hero.webp");
+    }
+  }
+}
+@media screen and (min-width: 744px) and (min-device-pixel-ratio: 3), screen and (min-width: 744px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 744px) and (min-resolution: 288dpi), screen and (min-width: 744px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: url("../tab-img/tab-x3-hero.jpg");
+  }
+  @supports (background-image: url("../tab-img/tab-x3-hero.webp")) {
+    .hero {
+      background-image: url("../tab-img/tab-x3-hero.webp");
+    }
   }
 }
 @media screen and (min-width: 1199px) {
   .hero {
     padding-top: 154px;
     padding-bottom: 64px;
-    background-image: url("../../img/BG1-desk-x1.jpg");
+    background-image: url("../desk-img/desk-x1-hero.jpg");
+  }
+  @supports (background-image: url("../desk-img/desk-x1-hero.webp")) {
+    .hero {
+      background-image: url("../desk-img/desk-x1-hero.webp");
+    }
+  }
+}
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../desk-img/desk-x2-hero.jpg");
+  }
+  @supports (background-image: url("../desk-img/desk-x2-hero.webp")) {
+    .hero {
+      background-image: url("../desk-img/desk-x2-hero.webp");
+    }
+  }
+}
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 3), screen and (min-width: 1199px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 1199px) and (min-resolution: 288dpi), screen and (min-width: 1199px) and (min-resolution: 3dppx) {
+  .hero {
+    background-image: url("../desk-img/desk-x3-hero.jpg");
+  }
+  @supports (background-image: url("../desk-img/desk-x3-hero.webp")) {
+    .hero {
+      background-image: url("../desk-img/desk-x3-hero.webp");
+    }
   }
 }
 
@@ -682,16 +741,31 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (min-width: 375px) {
   .services {
-    background-image: url("../../img/phone-bg2-x1.jpg");
+    background-image: url("../phone-img/phone-x1-services.jpg");
+  }
+  @supports (background-image: url("../phone-img/phone-x1-services.webp")) {
+    .services {
+      background-image: url("../phone-img/phone-x1-services.webp");
+    }
   }
 }
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 375px) and (min-device-pixel-ratio: 2), screen and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 375px) and (min-resolution: 192dpi), screen and (min-width: 375px) and (min-resolution: 2dppx) {
   .services {
-    background-image: url("../../img/tab-bg2-x1.jpg");
+    background-image: url("../phone-img/phone-x2-services.jpg");
+  }
+  @supports (background-image: url("../phone-img/phone-x2-services.webp")) {
+    .services {
+      background-image: url("../phone-img/phone-x2-services.webp");
+    }
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 375px) and (min-device-pixel-ratio: 3), screen and (min-width: 375px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 375px) and (min-resolution: 288dpi), screen and (min-width: 375px) and (min-resolution: 3dppx) {
   .services {
-    background-image: url("../../img/BG2-desk-x1.jpg");
+    background-image: url("../phone-img/phone-x3-services.jpg");
+  }
+  @supports (background-image: url("../phone-img/phone-x3-services.webp")) {
+    .services {
+      background-image: url("../phone-img/phone-x3-services.webp");
+    }
   }
 }/*# sourceMappingURL=main.css.map */

@@ -114,13 +114,31 @@ border-radius: 40px;
 .case{
 
 @include mob(375px){
-background-image: url("../../img/phone-bg3-x1.jpg");
+    @include bg-image ("../phone-img/phone-x1-case.webp" , "../phone-img/phone-x1-case.jpg");
+    @include retina (2, 192dpi, 2dppx){
+    @include bg-image ("../phone-img/phone-x2-case.webp", "../phone-img/phone-x2-case.jpg");
+}
+    @include retina(3, 288dpi, 3dppx) {
+    @include bg-image("../phone-img/phone-x3-case.webp", "../phone-img/phone-x3-case.jpg");
+}
 }
 @include tab(744px){
-background-image: url("../../img/tab-bg3-x1.jpg");
+    @include bg-image ("../tab-img/tab-x1-case.webp" , "../tab-img/tab-x1-case.jpg");
+    @include retina (2, 192dpi, 2dppx){
+    @include bg-image ("../tab-img/tab-x2-case.webp", "../tab-img/tab-x2-case.jpg");
+}
+    @include retina(3, 288dpi, 3dppx) {
+    @include bg-image("../tab-img/tab-x3-case.webp", "../tab-img/tab-x3-case.jpg");
+}
 }
 @include desc(1199px){
-background-image: url("../../img/BG3-desk-x1.jpg");
+    @include bg-image ("../desk-img/desk-x1-case.webp" , "../desk-img/desk-x1-case.jpg");
+    @include retina (2, 192dpi, 2dppx){
+    @include bg-image ("../desk-img/desk-x2-case.webp", "../desk-img/desk-x2-case.jpg");
+}
+    @include retina(3, 288dpi, 3dppx) {
+    @include bg-image("../../desk-img/desk-x3-case.webp", "../desk-img/desk-x3-case.jpg");
+}
 }
 }
 .case-list-item{

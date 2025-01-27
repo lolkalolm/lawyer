@@ -20,11 +20,11 @@
     }
   }
   
-  @mixin bg-image($webp, $fallback, $gradient){
+  @mixin bg-image($webp, $fallback){
     @supports (background-image: url("#{$webp}")){
-        background-image: $gradient, url("#{$webp}");
+        background-image: url("#{$webp}");
     }
-    background-image: $gradient, url("#{$fallback}");
+    background-image: url("#{$fallback}");
   }
   
   @mixin retina($dpr, $dpi, $dppx) {
