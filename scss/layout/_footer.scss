@@ -7,17 +7,13 @@
         font-weight: 400;
         line-height: 14.4px;
         letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
     @include tab(744px){
         font-family: Abel;
         font-size: 12px;
         font-weight: 400;
         line-height: 14.4px;
-        letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;       
+        letter-spacing: -0.02em;    
     }
     @include desc(1199px){
         font-family: Abel;
@@ -25,8 +21,6 @@
         font-weight: 400;
         line-height: 19.2px;
         letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
     }
     
@@ -39,8 +33,6 @@
         font-weight: 400;
         line-height: 19.2px;
         letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
     @include tab(744px){
         font-family: Abel;
@@ -48,8 +40,6 @@
         font-weight: 400;
         line-height: 19.2px;
         letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
     @include desc(1199px){
         font-family: Abel;
@@ -57,8 +47,6 @@
         font-weight: 400;
         line-height: 28.8px;
         letter-spacing: -0.02em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
     }
     }
     

@@ -2,11 +2,11 @@
 color:#FFFFFF ;
 font-family: Judson;
 font-weight: 400;
+letter-spacing: -0.02em;
 @include mob(375px){
 
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: -0.02em;
     margin-bottom: 329px;
     max-width: 309px;
 }
@@ -14,7 +14,6 @@ font-weight: 400;
 
     font-size: 64px;
     line-height: 64px;
-    letter-spacing: -0.02em;
     margin-bottom: 299px;   
     max-width: 448px;
 }
@@ -22,7 +21,6 @@ font-weight: 400;
     
     font-size: 90px;
     line-height: 90px;
-    letter-spacing: -0.02em;
     max-width: 600px;
     margin-bottom: 266px;
 }

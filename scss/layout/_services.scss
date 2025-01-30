@@ -8,7 +8,7 @@
         @include bg-image("../phone-img/phone-x3-services.webp", "../phone-img/phone-x3-services.jpg");
         }
     }
-}
+
     @include tab(744px){
         @include bg-image ("../tab-img/tab-x1-services.webp" , "../tab-img/tab-x1-services.jpg");
         @include retina (2, 192dpi, 2dppx){
@@ -27,3 +27,4 @@
         @include bg-image("../desk-img/desk-x3-services.webp", "../desk-img/desk-x3-services.jpg");
     }
     }
+}
