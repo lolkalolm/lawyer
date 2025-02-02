@@ -80,7 +80,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 13px;
     line-height: 19.5px;
     max-width: 180px;
-    margin-bottom: 43px;
   }
 }
 @media screen and (min-width: 744px) {
@@ -88,18 +87,16 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 13px;
     line-height: 19.5px;
     max-width: 240px;
-    margin-bottom: 43px;
   }
 }
 @media screen and (min-width: 1199px) {
   .case-list-text {
     font-size: 16px;
     line-height: 24px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
     max-width: 350px;
-    margin-bottom: 73px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -109,26 +106,28 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 40px;
   font-family: Abel;
   font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 @media screen and (min-width: 375px) {
   .case-list-btn {
     font-size: 14px;
     line-height: 16.8px;
-    max-width: 174px;
+    padding: 11px 11px;
   }
 }
 @media screen and (min-width: 744px) {
   .case-list-btn {
     font-size: 14px;
     line-height: 16.8px;
-    max-width: 174px;
+    padding: 11px 11px;
   }
 }
 @media screen and (min-width: 1199px) {
   .case-list-btn {
     font-size: 24px;
     line-height: 28.8px;
-    max-width: 364px;
+    padding: 11px 43px;
   }
 }
 
@@ -262,7 +261,6 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 375px) {
   .case-list-item {
     border-radius: 20px;
-    width: 212px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 48px;
@@ -271,8 +269,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media screen and (min-width: 744px) {
   .case-list-item {
-    margin: 0 auto;
-    width: 212px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 48px;
@@ -281,8 +277,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media screen and (min-width: 1199px) {
   .case-list-item {
-    width: 412px;
-    margin: 0 auto;
     padding-left: 31px;
     padding-right: 31px;
     padding-top: 48px;
@@ -292,6 +286,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .case-list-item:hover {
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 .case-list-item:hover .case-list-text {
   color: #151515;
@@ -343,6 +338,19 @@ h1, h2, h3, h4, h5, h6, p {
   .case-list-small-text {
     padding-bottom: 157px;
   }
+}
+
+.case-list-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contacts-list-text {
@@ -411,21 +419,18 @@ h1, h2, h3, h4, h5, h6, p {
   .footer-text {
     font-size: 12px;
     line-height: 15.12px;
-    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 744px) {
   .footer-text {
     font-size: 20px;
     line-height: 25.2px;
-    padding-bottom: 35px;
   }
 }
 @media screen and (min-width: 1199px) {
   .footer-text {
     font-size: 20px;
     line-height: 25.2px;
-    padding-bottom: 52px;
   }
 }
 
@@ -435,16 +440,19 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 375px) {
   .footer {
     padding-top: 34px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 744px) {
   .footer {
     padding-top: 67px;
+    padding-bottom: 35px;
   }
 }
 @media screen and (min-width: 1199px) {
   .footer {
     padding-top: 50px;
+    padding-bottom: 52px;
   }
 }
 
@@ -786,10 +794,13 @@ h1, h2, h3, h4, h5, h6, p {
 .services {
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 @media screen and (min-width: 375px) {
   .services {
     background-image: url("../phone-img/phone-x1-services.jpg");
+    padding-top: 431px;
+    padding-bottom: 40px;
   }
   @supports (background-image: url("../phone-img/phone-x1-services.webp")) {
     .services {
@@ -820,6 +831,8 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 744px) {
   .services {
     background-image: url("../tab-img/tab-x1-services.jpg");
+    padding-top: 579px;
+    padding-bottom: 78px;
   }
   @supports (background-image: url("../tab-img/tab-x1-services.webp")) {
     .services {
@@ -901,11 +914,15 @@ h1, h2, h3, h4, h5, h6, p {
     padding-right: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
 }
 .services-list-item:hover {
   background-color: #FFFFFF;
-  padding-bottom: 111px;
+  -webkit-transform: scaleY(1.2);
+          transform: scaleY(1.2);
+  cursor: pointer;
 }
 .services-list-item:hover .services-list-title {
   color: black;

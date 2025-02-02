@@ -1,6 +1,7 @@
 .services{
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     @include mob(375px){
         @include bg-image ("../phone-img/phone-x1-services.webp" , "../phone-img/phone-x1-services.jpg");
         @include retina (2, 192dpi, 2dppx){
@@ -9,6 +10,8 @@
         @include retina(3, 288dpi, 3dppx) {
         @include bg-image("../phone-img/phone-x3-services.webp", "../phone-img/phone-x3-services.jpg");
         }
+        padding-top: 431px;
+        padding-bottom: 40px;
     }
 
     @include tab(744px){
@@ -19,6 +22,8 @@
         @include retina(3, 288dpi, 3dppx) {
         @include bg-image("../tab-img/tab-x3-services.webp", "../tab-img/tab-x3-services.jpg");
     }
+    padding-top: 579px;
+    padding-bottom: 78px;
         }
     @include desc(1199px){
         @include bg-image ("../desk-img/desk-x1-services.webp" , "../desk-img/desk-x1-services.jpg");
@@ -53,6 +58,7 @@
      padding-right: 40px;
      padding-top: 40px;
      padding-bottom: 40px;
+     transition: 0.5s;
     }
     @include tab(744px){
 
@@ -62,7 +68,8 @@
     }
     &:hover{
         background-color: #FFFFFF;
-        padding-bottom: 111px;
+        transform: scaleY(1.2);
+        cursor: pointer;
     .services-list-title{
         color: black;
     }

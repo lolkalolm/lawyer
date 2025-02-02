@@ -47,29 +47,32 @@
     @include mob(375px){
         font-size: 12px;
         line-height: 15.12px;
-        padding-bottom: 30px;
+       
     }
     @include tab(744px){
         font-size: 20px;
         line-height: 25.2px;
-        padding-bottom: 35px;
+        
     }
     @include desc(1199px){
         font-size: 20px;
         line-height: 25.2px;
-        padding-bottom: 52px;
+       
     }
     }
     .footer{
         background-color: #151515;
         @include mob(375px){
             padding-top: 34px;
+            padding-bottom: 30px;
         }
         @include tab(744px){
             padding-top: 67px;
+            padding-bottom: 35px;
         }
         @include desc(1199px){
             padding-top: 50px;
+            padding-bottom: 52px;
         }
     }
     .footer-img-div{
