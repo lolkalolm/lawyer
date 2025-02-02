@@ -48,32 +48,25 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Judson;
   color: #FFFFFF;
   font-weight: 400;
+  line-height: 54px;
+  letter-spacing: -0.02em;
 }
 @media screen and (min-width: 375px) {
   .case-title {
     font-size: 54px;
-    line-height: 54px;
-    letter-spacing: -0.02em;
-    padding-top: 55px;
-    padding-bottom: 41px;
+    margin-bottom: 41px;
   }
 }
 @media screen and (min-width: 744px) {
   .case-title {
     font-size: 57px;
-    line-height: 54px;
-    letter-spacing: -0.02em;
-    padding-bottom: 47px;
-    padding-top: 121px;
+    margin-bottom: 47px;
   }
 }
 @media screen and (min-width: 1199px) {
   .case-title {
     font-size: 60px;
-    line-height: 54px;
-    letter-spacing: -0.02em;
-    padding-bottom: 69px;
-    padding-top: 89px;
+    margin-bottom: 69px;
   }
 }
 
@@ -86,10 +79,8 @@ h1, h2, h3, h4, h5, h6, p {
   .case-list-text {
     font-size: 13px;
     line-height: 19.5px;
-    padding-top: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
     max-width: 180px;
+    margin-bottom: 43px;
   }
 }
 @media screen and (min-width: 744px) {
@@ -97,9 +88,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 13px;
     line-height: 19.5px;
     max-width: 240px;
-    padding-top: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
+    margin-bottom: 43px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -110,9 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
         -ms-flex-align: start;
             align-items: start;
     max-width: 350px;
-    padding-top: 58px;
-    padding-left: 31px;
-    padding-right: 31px;
+    margin-bottom: 73px;
   }
 }
 
@@ -120,62 +107,37 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFFFFF;
   background-color: #1668E3;
   border-radius: 40px;
+  font-family: Abel;
+  font-weight: 400;
 }
 @media screen and (min-width: 375px) {
   .case-list-btn {
-    font-family: Abel;
     font-size: 14px;
-    font-weight: 400;
     line-height: 16.8px;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
     max-width: 174px;
-    margin-bottom: 35px;
-    margin-left: 14px;
   }
 }
 @media screen and (min-width: 744px) {
   .case-list-btn {
-    font-family: Abel;
     font-size: 14px;
-    font-weight: 400;
     line-height: 16.8px;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
-    margin-bottom: 34px;
     max-width: 174px;
-    margin-left: 13px;
   }
 }
 @media screen and (min-width: 1199px) {
   .case-list-btn {
-    font-family: Abel;
     font-size: 24px;
-    font-weight: 400;
     line-height: 28.8px;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
-    margin-bottom: 53px;
     max-width: 364px;
-    margin-left: 24px;
   }
 }
 
-@media screen and (min-width: 375px) {
-  .case-list {
-    padding-bottom: 140px;
-  }
-}
 @media screen and (min-width: 744px) {
   .case-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 12px;
-    padding-bottom: 121px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -184,13 +146,20 @@ h1, h2, h3, h4, h5, h6, p {
     display: -ms-flexbox;
     display: flex;
     gap: 22px;
-    padding-bottom: 147px;
   }
 }
 
+.case {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media screen and (min-width: 375px) {
   .case {
     background-image: url("../phone-img/phone-x1-case.jpg");
+    padding-top: 55px;
+    padding-bottom: 140px;
+    padding-left: 66px;
+    padding-right: 93px;
   }
   @supports (background-image: url("../phone-img/phone-x1-case.webp")) {
     .case {
@@ -221,6 +190,10 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 744px) {
   .case {
     background-image: url("../tab-img/tab-x1-case.jpg");
+    padding-top: 121px;
+    padding-bottom: 121px;
+    padding-left: 41px;
+    padding-right: 41px;
   }
   @supports (background-image: url("../tab-img/tab-x1-case.webp")) {
     .case {
@@ -251,6 +224,10 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 1199px) {
   .case {
     background-image: url("../desk-img/desk-x1-case.jpg");
+    padding-top: 89px;
+    padding-bottom: 147px;
+    padding-left: 80px;
+    padding-right: 79px;
   }
   @supports (background-image: url("../desk-img/desk-x1-case.webp")) {
     .case {
@@ -272,9 +249,9 @@ h1, h2, h3, h4, h5, h6, p {
   .case {
     background-image: url("../desk-img/desk-x3-case.jpg");
   }
-  @supports (background-image: url("../../desk-img/desk-x3-case.webp")) {
+  @supports (background-image: url("../desk-img/desk-x3-case.webp")) {
     .case {
-      background-image: url("../../desk-img/desk-x3-case.webp");
+      background-image: url("../desk-img/desk-x3-case.webp");
     }
   }
 }
@@ -285,21 +262,31 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 375px) {
   .case-list-item {
     border-radius: 20px;
-    margin-bottom: 24px;
     width: 212px;
-    margin-left: 75px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 35px;
   }
 }
 @media screen and (min-width: 744px) {
   .case-list-item {
     margin: 0 auto;
     width: 212px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 35px;
   }
 }
 @media screen and (min-width: 1199px) {
   .case-list-item {
     width: 412px;
     margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 48px;
+    padding-bottom: 51px;
   }
 }
 
@@ -359,64 +346,52 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contacts-list-text {
+  font-family: Abel;
   color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 @media screen and (min-width: 375px) {
   .contacts-list-text {
-    font-family: Abel;
     font-size: 12px;
-    font-weight: 400;
     line-height: 14.4px;
-    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 744px) {
   .contacts-list-text {
-    font-family: Abel;
     font-size: 12px;
-    font-weight: 400;
     line-height: 14.4px;
-    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 1199px) {
   .contacts-list-text {
-    font-family: Abel;
     font-size: 16px;
-    font-weight: 400;
     line-height: 19.2px;
-    letter-spacing: -0.02em;
   }
 }
 
 .contacts-list-link {
+  font-family: Abel;
   color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 @media screen and (min-width: 375px) {
   .contacts-list-link {
-    font-family: Abel;
     font-size: 16px;
-    font-weight: 400;
     line-height: 19.2px;
-    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 744px) {
   .contacts-list-link {
-    font-family: Abel;
     font-size: 16px;
-    font-weight: 400;
     line-height: 19.2px;
-    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 1199px) {
   .contacts-list-link {
-    font-family: Abel;
     font-size: 24px;
-    font-weight: 400;
     line-height: 28.8px;
-    letter-spacing: -0.02em;
   }
 }
 
@@ -428,49 +403,49 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: Abel;
+  font-weight: 400;
+  letter-spacing: -0.03em;
 }
 @media screen and (min-width: 375px) {
   .footer-text {
-    font-family: Abel;
     font-size: 12px;
-    font-weight: 400;
     line-height: 15.12px;
-    letter-spacing: -0.03em;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
     padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 744px) {
   .footer-text {
-    font-family: Abel;
     font-size: 20px;
-    font-weight: 400;
     line-height: 25.2px;
-    letter-spacing: -0.03em;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
     padding-bottom: 35px;
   }
 }
 @media screen and (min-width: 1199px) {
   .footer-text {
-    font-family: Abel;
     font-size: 20px;
-    font-weight: 400;
     line-height: 25.2px;
-    letter-spacing: -0.03em;
-    text-underline-position: from-font;
-    -webkit-text-decoration-skip-ink: none;
-            text-decoration-skip-ink: none;
     padding-bottom: 52px;
   }
 }
 
 .footer {
   background-color: #151515;
+}
+@media screen and (min-width: 375px) {
+  .footer {
+    padding-top: 34px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .footer {
+    padding-top: 67px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .footer {
+    padding-top: 50px;
+  }
 }
 
 .footer-img-div {
@@ -546,23 +521,21 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  gap: 15px;
 }
 @media screen and (min-width: 375px) {
   .footer-list {
     padding-top: 83px;
-    gap: 15px;
     padding-bottom: 32px;
   }
 }
 @media screen and (min-width: 744px) {
   .footer-list {
-    gap: 15px;
     padding-bottom: 24px;
   }
 }
 @media screen and (min-width: 1199px) {
   .footer-list {
-    gap: 15px;
     padding-bottom: 41px;
   }
 }
@@ -633,35 +606,35 @@ h1, h2, h3, h4, h5, h6, p {
 .hero-text {
   color: #FFFFFF;
   font-family: Abel;
+  letter-spacing: -0.02em;
+  font-weight: 400;
 }
 @media screen and (min-width: 375px) {
   .hero-text {
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
-    letter-spacing: -0.02em;
     max-width: 100px;
   }
 }
 @media screen and (min-width: 744px) {
   .hero-text {
     font-size: 26px;
-    font-weight: 400;
     line-height: 26px;
-    letter-spacing: -0.02em;
     max-width: 155px;
   }
 }
 @media screen and (min-width: 1199px) {
   .hero-text {
     font-size: 36px;
-    font-weight: 400;
     line-height: 36px;
-    letter-spacing: -0.02em;
     max-width: 320px;
   }
 }
 
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media screen and (min-width: 375px) {
   .hero {
     padding-top: 122px;
@@ -763,26 +736,24 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Judson;
   color: #1668E3;
   font-weight: 400;
+  letter-spacing: -0.02em;
 }
 @media screen and (min-width: 375px) {
   .hero-title-span {
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 744px) {
   .hero-title-span {
     font-size: 64px;
     line-height: 64px;
-    letter-spacing: -0.02em;
   }
 }
 @media screen and (min-width: 1199px) {
   .hero-title-span {
     font-size: 90px;
     line-height: 90px;
-    letter-spacing: -0.02em;
   }
 }
 
@@ -793,6 +764,8 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-top: 1px solid #1668E3;
+  padding-top: 61px;
 }
 @media screen and (min-width: 375px) {
   .hero-text-wrap {
@@ -810,6 +783,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.services {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media screen and (min-width: 375px) {
   .services {
     background-image: url("../phone-img/phone-x1-services.jpg");
@@ -873,6 +850,8 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 1199px) {
   .services {
     background-image: url("../desk-img/desk-x1-services.jpg");
+    padding-top: 560px;
+    padding-bottom: 70px;
   }
   @supports (background-image: url("../desk-img/desk-x1-services.webp")) {
     .services {
@@ -899,4 +878,74 @@ h1, h2, h3, h4, h5, h6, p {
       background-image: url("../desk-img/desk-x3-services.webp");
     }
   }
+}
+
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1199px) {
+  .services-list {
+    gap: 4px;
+  }
+}
+
+.services-list-item {
+  background-color: rgba(255, 255, 255, 0.1490196078);
+  border-radius: 20px;
+}
+@media screen and (min-width: 375px) {
+  .services-list-item {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.services-list-item:hover {
+  background-color: #FFFFFF;
+  padding-bottom: 111px;
+}
+.services-list-item:hover .services-list-title {
+  color: black;
+}
+.services-list-item:hover .services-sub-list-item {
+  color: black;
+}
+
+@media screen and (min-width: 375px) {
+  .services-list-title {
+    font-family: Inter;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 744px) {
+  .services-list-title {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .services-list-title {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .services-sub-list-item {
+    font-family: Abel;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+  }
+}
+.services-sub-list-item:not(:first-child) {
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */

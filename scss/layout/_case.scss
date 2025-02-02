@@ -2,27 +2,19 @@
     font-family: Judson;
 color:#FFFFFF ;
 font-weight: 400;
-
+line-height: 54px;
+letter-spacing: -0.02em;
 @include mob(375px){
-    font-size: 54px;
-    line-height: 54px;
-    letter-spacing: -0.02em; 
-    padding-top: 55px;  
-    padding-bottom: 41px;
+    font-size: 54px; 
+    margin-bottom: 41px;
 }
 @include tab(744px){
     font-size: 57px;
-    line-height: 54px;
-    letter-spacing: -0.02em;
-        padding-bottom: 47px;
-        padding-top: 121px;
+    margin-bottom: 47px;
 }
 @include desc(1199px){
     font-size: 60px;
-    line-height: 54px;
-    letter-spacing: -0.02em;
-    padding-bottom: 69px;
-    padding-top: 89px;
+    margin-bottom: 69px;
 }
 }
 .case-list-text{
@@ -33,27 +25,22 @@ font-weight: 400;
 @include mob(375px){
     font-size: 13px;
     line-height: 19.5px;
-     padding-top: 48px;       
-     padding-left: 16px;
-    padding-right: 16px;
+
      max-width: 180px;
+     margin-bottom: 43px;
 }
 @include tab(744px){
     font-size: 13px;
     line-height: 19.5px;
     max-width: 240px;
-padding-top: 48px;
-padding-left: 16px;
-padding-right: 16px;
+margin-bottom: 43px;
 }
 @include desc(1199px){
     font-size: 16px;
     line-height: 24px;
     align-items: start;
     max-width: 350px;
- padding-top: 58px;
- padding-left: 31px;
-padding-right: 31px;
+margin-bottom:73px ;
 }
 }
 .case-list-btn{
@@ -61,58 +48,46 @@ padding-right: 31px;
 color:#FFFFFF ;
 background-color: #1668E3;
 border-radius: 40px;
+font-family: Abel;
+font-weight: 400;
 @include mob(375px){
-    font-family: Abel;
     font-size: 14px;
-    font-weight: 400;
-    line-height: 16.8px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none; 
+    line-height: 16.8px; 
     max-width:174px ;
-    margin-bottom:35px ;
-    margin-left: 14px;
+
 }
 @include tab(744px){
-    font-family: Abel;
     font-size: 14px;
-    font-weight: 400;
     line-height: 16.8px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-bottom: 34px;
     max-width: 174px;
-    margin-left: 13px;
+
 }
 @include desc(1199px){
-    font-family: Abel;
     font-size: 24px;
-    font-weight: 400;
     line-height: 28.8px;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-bottom: 53px;
     max-width: 364px;
-    margin-left: 24px;
+
 }
 }
 .case-list{
     @include mob(375px){
-        padding-bottom: 140px;
+
     }
     @include tab(744px){
         display: flex;
         gap: 12px;
-        padding-bottom: 121px;
+
     }
     @include desc(1199px){
         display: flex;
         gap: 22px;
-        padding-bottom: 147px;
+
     }   
 }
 
 .case{
-
+    background-repeat: no-repeat;
+ background-size: cover;
 @include mob(375px){
     @include bg-image ("../phone-img/phone-x1-case.webp" , "../phone-img/phone-x1-case.jpg");
     @include retina (2, 192dpi, 2dppx){
@@ -121,6 +96,11 @@ border-radius: 40px;
     @include retina(3, 288dpi, 3dppx) {
     @include bg-image("../phone-img/phone-x3-case.webp", "../phone-img/phone-x3-case.jpg");
 }
+padding-top: 55px;
+padding-bottom: 140px;
+padding-left: 66px;
+padding-right: 93px;
+
 }
 @include tab(744px){
     @include bg-image ("../tab-img/tab-x1-case.webp" , "../tab-img/tab-x1-case.jpg");
@@ -130,6 +110,13 @@ border-radius: 40px;
     @include retina(3, 288dpi, 3dppx) {
     @include bg-image("../tab-img/tab-x3-case.webp", "../tab-img/tab-x3-case.jpg");
 }
+
+padding-top: 121px;
+padding-bottom: 121px;
+padding-left: 41px;
+padding-right: 41px;
+
+
 }
 @include desc(1199px){
     @include bg-image ("../desk-img/desk-x1-case.webp" , "../desk-img/desk-x1-case.jpg");
@@ -137,25 +124,40 @@ border-radius: 40px;
     @include bg-image ("../desk-img/desk-x2-case.webp", "../desk-img/desk-x2-case.jpg");
 }
     @include retina(3, 288dpi, 3dppx) {
-    @include bg-image("../../desk-img/desk-x3-case.webp", "../desk-img/desk-x3-case.jpg");
+    @include bg-image("../desk-img/desk-x3-case.webp", "../desk-img/desk-x3-case.jpg");
 }
+padding-top: 89px;
+padding-bottom: 147px;
+padding-left: 80px;
+padding-right: 79px;
+
 }
 }
 .case-list-item{
     background-color: #FFFFFF26;
     @include mob(375px){
         border-radius: 20px;
-        margin-bottom: 24px;
         width: 212px;
-        margin-left: 75px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 48px;
+        padding-bottom: 35px;
     }
     @include tab(744px){
         margin: 0 auto;
         width: 212px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 48px;
+        padding-bottom: 35px;
     }
     @include desc(1199px){
         width: 412px;
         margin: 0 auto;
+        padding-left: 31px;
+        padding-right: 31px;
+        padding-top: 48px;
+        padding-bottom: 51px;
     }
 
 }

@@ -1,52 +1,38 @@
 .contacts-list-text{
-
+    font-family: Abel;
     color:#FFFFFF66 ;
+    font-weight: 400;
+    letter-spacing: -0.02em;
     @include mob(375px){
-        font-family: Abel;
         font-size: 12px;
-        font-weight: 400;
         line-height: 14.4px;
-        letter-spacing: -0.02em;
     }
     @include tab(744px){
-        font-family: Abel;
         font-size: 12px;
-        font-weight: 400;
-        line-height: 14.4px;
-        letter-spacing: -0.02em;    
+        line-height: 14.4px;  
     }
     @include desc(1199px){
-        font-family: Abel;
         font-size: 16px;
-        font-weight: 400;
         line-height: 19.2px;
-        letter-spacing: -0.02em;
     }
     }
     
     .contacts-list-link{
-    
-    color:#FFFFFF ;
-    @include mob(375px){
         font-family: Abel;
+    color:#FFFFFF ;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    @include mob(375px){
         font-size: 16px;
-        font-weight: 400;
         line-height: 19.2px;
-        letter-spacing: -0.02em;
     }
     @include tab(744px){
-        font-family: Abel;
         font-size: 16px;
-        font-weight: 400;
         line-height: 19.2px;
-        letter-spacing: -0.02em;
     }
     @include desc(1199px){
-        font-family: Abel;
         font-size: 24px;
-        font-weight: 400;
         line-height: 28.8px;
-        letter-spacing: -0.02em;
     }
     }
     
@@ -54,39 +40,37 @@
     color:#FFFFFF ;
     display: flex;
     justify-content: center;
+    font-family: Abel;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+
     @include mob(375px){
-        font-family: Abel;
         font-size: 12px;
-        font-weight: 400;
         line-height: 15.12px;
-        letter-spacing: -0.03em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
         padding-bottom: 30px;
     }
     @include tab(744px){
-        font-family: Abel;
         font-size: 20px;
-        font-weight: 400;
         line-height: 25.2px;
-        letter-spacing: -0.03em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
         padding-bottom: 35px;
     }
     @include desc(1199px){
-        font-family: Abel;
         font-size: 20px;
-        font-weight: 400;
         line-height: 25.2px;
-        letter-spacing: -0.03em;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
         padding-bottom: 52px;
     }
     }
     .footer{
         background-color: #151515;
+        @include mob(375px){
+            padding-top: 34px;
+        }
+        @include tab(744px){
+            padding-top: 67px;
+        }
+        @include desc(1199px){
+            padding-top: 50px;
+        }
     }
     .footer-img-div{
         display: flex;
@@ -94,6 +78,7 @@
         @include tab(744px){
             gap: 40px;
             padding-bottom: 6px;
+
         }
         @include desc(1199px){
             gap: 29px;
@@ -130,17 +115,15 @@
     .footer-list{
         display: flex;
         justify-content: end;
+        gap: 15px;
         @include mob(375px){
             padding-top: 83px;
-            gap: 15px;
             padding-bottom: 32px;
         }
         @include tab(744px){
-            gap: 15px;
             padding-bottom: 24px;
         }
         @include desc(1199px){
-            gap: 15px;
             padding-bottom: 41px;
         }
 }

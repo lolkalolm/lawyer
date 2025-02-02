@@ -1,4 +1,6 @@
 .services{
+    background-repeat: no-repeat;
+    background-size: cover;
     @include mob(375px){
         @include bg-image ("../phone-img/phone-x1-services.webp" , "../phone-img/phone-x1-services.jpg");
         @include retina (2, 192dpi, 2dppx){
@@ -26,5 +28,83 @@
         @include retina(3, 288dpi, 3dppx) {
         @include bg-image("../desk-img/desk-x3-services.webp", "../desk-img/desk-x3-services.jpg");
     }
+    padding-top: 560px;
+    padding-bottom: 70px;
+    }
+}
+.services-list{
+    display: flex;
+    @include mob(375px){
+     
+    }
+    @include tab(744px){
+       
+    }
+    @include desc(1199px){
+   gap: 4px;
+    }
+}
+.services-list-item{
+    background-color: #FFFFFF26;
+    border-radius: 20px
+    ;
+    @include mob(375px){
+     padding-left: 40px;
+     padding-right: 40px;
+     padding-top: 40px;
+     padding-bottom: 40px;
+    }
+    @include tab(744px){
+
+    }
+    @include desc(1199px){
+
+    }
+    &:hover{
+        background-color: #FFFFFF;
+        padding-bottom: 111px;
+    .services-list-title{
+        color: black;
+    }
+    .services-sub-list-item{
+        color: black;
+    }
+    }
+}
+.services-list-title{
+
+    @include mob(375px){
+        font-family: Inter;
+        font-size: 54px;
+        font-weight: 400;
+        line-height: 54px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    @include tab(744px){
+       width: 420px;
+    }
+    @include desc(1199px){
+   width: 420px;
+    }
+}
+.services-sub-list-item{
+    @include mob(375px){
+        font-family: Abel;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+    }
+    @include tab(744px){
+       
+    }
+    @include desc(1199px){
+   
+    }
+    &:not(:first-child){
+        margin-top: 10px;
     }
 }

@@ -23,34 +23,33 @@ letter-spacing: -0.02em;
     line-height: 90px;
     max-width: 600px;
     margin-bottom: 266px;
+
 }
 }
 .hero-text{
 color:#FFFFFF ;
 font-family: Abel;
+letter-spacing: -0.02em;
+font-weight: 400;
 @include mob(375px){
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
-    letter-spacing: -0.02em;
     max-width: 100px;
 }
 @include tab(744px){
     font-size: 26px;
-    font-weight: 400;
     line-height: 26px;
-    letter-spacing: -0.02em;
     max-width: 155px;
 }
 @include desc(1199px){
     font-size: 36px;
-    font-weight: 400;
     line-height: 36px;
-    letter-spacing: -0.02em;
     max-width: 320px;
 }
 }
 .hero{
+    background-repeat: no-repeat;
+ background-size: cover;
     @include mob(375px){
         padding-top: 122px;
     padding-bottom: 76px;
@@ -89,27 +88,27 @@ font-family: Abel;
     font-family: Judson;
 color:#1668E3 ;
 font-weight: 400;
+letter-spacing: -0.02em;
 @include mob(375px){
     font-size: 48px;
     line-height: 48px;
-    letter-spacing: -0.02em;
 }
 @include tab(744px){
     font-size: 64px;
     line-height: 64px;
-    letter-spacing: -0.02em;
 
 }
 @include desc(1199px){
     font-size: 90px;
     line-height: 90px;
-    letter-spacing: -0.02em;
 }
 }
 
 .hero-text-wrap{
     display: flex;
     justify-content: center;
+    border-top:1px solid #1668E3 ;
+    padding-top: 61px;
     @include mob(375px){
         gap: 16px;
 }
@@ -119,5 +118,8 @@ font-weight: 400;
 @include desc(1199px){
     gap: 46px;
 }
+
+
 }
+
 
