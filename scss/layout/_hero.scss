@@ -3,13 +3,10 @@ color:#FFFFFF ;
 font-family: Judson;
 font-weight: 400;
 letter-spacing: -0.02em;
-@include mob(375px){
-
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 329px;
     max-width: 309px;
-}
 @include tab(744px){
 
     font-size: 64px;
@@ -31,11 +28,9 @@ color:#FFFFFF ;
 font-family: Abel;
 letter-spacing: -0.02em;
 font-weight: 400;
-@include mob(375px){
     font-size: 20px;
     line-height: 20px;
     max-width: 100px;
-}
 @include tab(744px){
     font-size: 26px;
     line-height: 26px;
@@ -50,7 +45,6 @@ font-weight: 400;
 .hero{
     background-repeat: no-repeat;
  background-size: cover;
-    @include mob(375px){
         padding-top: 122px;
     padding-bottom: 76px;
     @include bg-image ("../phone-img/phone-x1-hero.webp" , "../phone-img/phone-x1-hero.jpg");
@@ -60,7 +54,6 @@ font-weight: 400;
     @include retina(3, 288dpi, 3dppx) {
     @include bg-image("../phone-img/phone-x3-hero.webp", "../phone-img/phone-x3-hero.jpg");
 }
-    }
     @include tab(744px){
         padding-top:166px ;
         padding-bottom:33px ;
@@ -89,10 +82,8 @@ font-weight: 400;
 color:#1668E3 ;
 font-weight: 400;
 letter-spacing: -0.02em;
-@include mob(375px){
     font-size: 48px;
     line-height: 48px;
-}
 @include tab(744px){
     font-size: 64px;
     line-height: 64px;
@@ -109,9 +100,8 @@ letter-spacing: -0.02em;
     justify-content: center;
     border-top:1px solid #1668E3 ;
     padding-top: 61px;
-    @include mob(375px){
         gap: 16px;
-}
+
 @include tab(744px){
     gap: 30px;
 }

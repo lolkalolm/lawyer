@@ -3,10 +3,10 @@
     color:#FFFFFF66 ;
     font-weight: 400;
     letter-spacing: -0.02em;
-    @include mob(375px){
+
         font-size: 12px;
         line-height: 14.4px;
-    }
+    
     @include tab(744px){
         font-size: 12px;
         line-height: 14.4px;  
@@ -22,10 +22,10 @@
     color:#FFFFFF ;
     font-weight: 400;
     letter-spacing: -0.02em;
-    @include mob(375px){
+
         font-size: 16px;
         line-height: 19.2px;
-    }
+    
     @include tab(744px){
         font-size: 16px;
         line-height: 19.2px;
@@ -44,11 +44,11 @@
     font-weight: 400;
     letter-spacing: -0.03em;
 
-    @include mob(375px){
+
         font-size: 12px;
         line-height: 15.12px;
        
-    }
+    
     @include tab(744px){
         font-size: 20px;
         line-height: 25.2px;
@@ -62,10 +62,10 @@
     }
     .footer{
         background-color: #151515;
-        @include mob(375px){
+
             padding-top: 34px;
             padding-bottom: 30px;
-        }
+        
         @include tab(744px){
             padding-top: 67px;
             padding-bottom: 35px;
@@ -90,9 +90,9 @@
     }
     .contacts-texts{
         display: flex;
-        @include mob(375px){
+
             gap: 132px;
-        }
+        
         @include tab(744px){
             gap: 101px;
         }
@@ -102,10 +102,10 @@
     }
     .contacts-links{
         display: flex;
-        @include mob(375px){
+
             gap: 64px;
             margin-top:15px ;
-        }
+        
         @include tab(744px){
             gap:31px ;
             margin-top: 15px;
@@ -119,10 +119,10 @@
         display: flex;
         justify-content: end;
         gap: 15px;
-        @include mob(375px){
+
             padding-top: 83px;
             padding-bottom: 32px;
-        }
+        
         @include tab(744px){
             padding-bottom: 24px;
         }
@@ -131,9 +131,9 @@
         }
 }
         .contacts-list{
-            @include mob(375px){
+
                 padding-top: 32px;
-            }
+            
             @include tab(744px){
                 padding-top: 67px;
             }
@@ -142,9 +142,9 @@
             }
         }
  .footer-img{
-    @include mob(375px){
+
         display: none;
-    }
+    
     @include tab(744px){
     display: inline;
     }

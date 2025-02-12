@@ -2,7 +2,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    @include mob(375px){
+
         @include bg-image ("../phone-img/phone-x1-services.webp" , "../phone-img/phone-x1-services.jpg");
         @include retina (2, 192dpi, 2dppx){
         @include bg-image ("../phone-img/phone-x2-services.webp", "../phone-img/phone-x2-services.jpg");
@@ -12,7 +12,7 @@
         }
         padding-top: 431px;
         padding-bottom: 40px;
-    }
+
 
     @include tab(744px){
         @include bg-image ("../tab-img/tab-x1-services.webp" , "../tab-img/tab-x1-services.jpg");
@@ -39,9 +39,6 @@
 }
 .services-list{
     display: flex;
-    @include mob(375px){
-     
-    }
     @include tab(744px){
        
     }
@@ -53,13 +50,12 @@
     background-color: #FFFFFF26;
     border-radius: 20px
     ;
-    @include mob(375px){
      padding-left: 40px;
      padding-right: 40px;
      padding-top: 40px;
      padding-bottom: 40px;
      transition: 0.5s;
-    }
+
     @include tab(744px){
 
     }
@@ -80,7 +76,6 @@
 }
 .services-list-title{
 
-    @include mob(375px){
         font-family: Inter;
         font-size: 54px;
         font-weight: 400;
@@ -88,7 +83,6 @@
         letter-spacing: -0.02em;
         color: #FFFFFF;
         margin-bottom: 40px;
-    }
     @include tab(744px){
        width: 420px;
     }
@@ -97,14 +91,14 @@
     }
 }
 .services-sub-list-item{
-    @include mob(375px){
+
         font-family: Abel;
         font-size: 20px;
         font-weight: 400;
         line-height: 32px;
         letter-spacing: -0.02em;
         color: #FFFFFF;
-    }
+
     @include tab(744px){
        
     }

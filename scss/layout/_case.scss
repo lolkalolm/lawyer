@@ -4,10 +4,10 @@ color:#FFFFFF ;
 font-weight: 400;
 line-height: 54px;
 letter-spacing: -0.02em;
-@include mob(375px){
+
     font-size: 54px; 
     margin-bottom: 41px;
-}
+
 @include tab(744px){
     font-size: 57px;
     margin-bottom: 47px;
@@ -22,12 +22,12 @@ letter-spacing: -0.02em;
 color:#FFFFFF ;
 font-weight: 400;
 
-@include mob(375px){
+
     font-size: 13px;
     line-height: 19.5px;
 
      max-width: 180px;
-}
+
 @include tab(744px){
     font-size: 13px;
     line-height: 19.5px;
@@ -50,11 +50,11 @@ font-family: Abel;
 font-weight: 400;
 padding-top:11px ;
 padding-bottom:11px ;
-@include mob(375px){
+
     font-size: 14px;
     line-height: 16.8px; 
     padding: 11px 11px;
-}
+
 @include tab(744px){
     font-size: 14px;
     line-height: 16.8px;
@@ -67,9 +67,7 @@ padding-bottom:11px ;
 }
 }
 .case-list{
-    @include mob(375px){
 
-    }
     @include tab(744px){
         display: flex;
         gap: 12px;
@@ -132,13 +130,13 @@ padding-right: 79px;
 }
 .case-list-item{
     background-color: #FFFFFF26;
-    @include mob(375px){
+
         border-radius: 20px;
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 48px;
         padding-bottom: 35px;
-    }
+
     @include tab(744px){
         padding-left: 16px;
         padding-right: 16px;
@@ -161,9 +159,9 @@ padding-right: 79px;
     }
 }
 .case-list-first-text{
-    @include mob(375px){
+
         padding-bottom: 43px;
-    }
+
     @include tab(744px){
         padding-bottom: 43px;
     }
@@ -172,9 +170,9 @@ padding-right: 79px;
     }
     }
     .case-list-sec-text{
-        @include mob(375px){
+
             padding-bottom: 43px;
-        }
+
         @include tab(744px){
             padding-bottom: 43px;
         }
@@ -183,9 +181,9 @@ padding-right: 79px;
         }
     }
     .case-list-small-text{
-        @include mob(375px){
+
             padding-bottom: 158px;
-        }
+        
         @include tab(744px){
             padding-bottom: 158px;
         }
