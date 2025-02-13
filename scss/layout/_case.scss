@@ -41,7 +41,7 @@ font-weight: 400;
     flex-grow: 1;
 }
 }
-.case-list-btn{
+.case-list-link{
  
 color:#FFFFFF ;
 background-color: #1668E3;
@@ -136,6 +136,12 @@ padding-right: 79px;
         padding-right: 16px;
         padding-top: 48px;
         padding-bottom: 35px;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 212px;
+        margin: 0 auto;
 
     @include tab(744px){
         padding-left: 16px;
@@ -148,6 +154,7 @@ padding-right: 79px;
         padding-right: 31px;
         padding-top: 48px;
         padding-bottom: 51px;
+        width: 412px;
     }
 
 }

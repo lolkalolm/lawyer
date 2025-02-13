@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-.case-list-btn {
+.case-list-link {
   color: #FFFFFF;
   background-color: #1668E3;
   border-radius: 40px;
@@ -105,14 +105,14 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 11px 11px;
 }
 @media screen and (min-width: 744px) {
-  .case-list-btn {
+  .case-list-link {
     font-size: 14px;
     line-height: 16.8px;
     padding: 11px 11px;
   }
 }
 @media screen and (min-width: 1199px) {
-  .case-list-btn {
+  .case-list-link {
     font-size: 24px;
     line-height: 28.8px;
     padding: 11px 43px;
@@ -250,6 +250,19 @@ h1, h2, h3, h4, h5, h6, p {
   padding-right: 16px;
   padding-top: 48px;
   padding-bottom: 35px;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 212px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 744px) {
   .case-list-item {
@@ -265,6 +278,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding-right: 31px;
     padding-top: 48px;
     padding-bottom: 51px;
+    width: 412px;
   }
 }
 
