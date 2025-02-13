@@ -93,8 +93,6 @@ padding-bottom:11px ;
 }
 padding-top: 55px;
 padding-bottom: 140px;
-padding-left: 66px;
-padding-right: 93px;
 
 }
 @include tab(744px){
@@ -108,8 +106,7 @@ padding-right: 93px;
 
 padding-top: 121px;
 padding-bottom: 121px;
-padding-left: 41px;
-padding-right: 41px;
+
 
 
 }
@@ -123,8 +120,7 @@ padding-right: 41px;
 }
 padding-top: 89px;
 padding-bottom: 147px;
-padding-left: 80px;
-padding-right: 79px;
+
 
 }
 }
@@ -143,6 +139,7 @@ padding-right: 79px;
         width: 212px;
         margin: 0 auto;
         margin-bottom: 24px;
+        transition: 2s;
     @include tab(744px){
         padding-left: 16px;
         padding-right: 16px;

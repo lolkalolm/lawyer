@@ -145,8 +145,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-image: url("../phone-img/phone-x1-case.jpg");
     padding-top: 55px;
     padding-bottom: 140px;
-    padding-left: 66px;
-    padding-right: 93px;
   }
   @supports (background-image: url("../phone-img/phone-x1-case.webp")) {
     .case {
@@ -179,8 +177,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-image: url("../tab-img/tab-x1-case.jpg");
     padding-top: 121px;
     padding-bottom: 121px;
-    padding-left: 41px;
-    padding-right: 41px;
   }
   @supports (background-image: url("../tab-img/tab-x1-case.webp")) {
     .case {
@@ -213,8 +209,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-image: url("../desk-img/desk-x1-case.jpg");
     padding-top: 89px;
     padding-bottom: 147px;
-    padding-left: 80px;
-    padding-right: 79px;
   }
   @supports (background-image: url("../desk-img/desk-x1-case.webp")) {
     .case {
@@ -264,6 +258,8 @@ h1, h2, h3, h4, h5, h6, p {
   width: 212px;
   margin: 0 auto;
   margin-bottom: 24px;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 @media screen and (min-width: 744px) {
   .case-list-item {
