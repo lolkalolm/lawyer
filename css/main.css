@@ -342,27 +342,6 @@ h1, h2, h3, h4, h5, h6, p {
           justify-content: space-between;
 }
 
-.contacts-list-text {
-  font-family: Abel;
-  color: rgba(255, 255, 255, 0.4);
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  font-size: 12px;
-  line-height: 14.4px;
-}
-@media screen and (min-width: 744px) {
-  .contacts-list-text {
-    font-size: 12px;
-    line-height: 14.4px;
-  }
-}
-@media screen and (min-width: 1199px) {
-  .contacts-list-text {
-    font-size: 16px;
-    line-height: 19.2px;
-  }
-}
-
 .contacts-list-link {
   font-family: Abel;
   color: #FFFFFF;
@@ -511,15 +490,49 @@ h1, h2, h3, h4, h5, h6, p {
 
 .contacts-list {
   padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
 }
 @media screen and (min-width: 744px) {
   .contacts-list {
     padding-top: 67px;
+    gap: 33px;
   }
 }
 @media screen and (min-width: 1199px) {
   .contacts-list {
     padding-top: 50px;
+    gap: 40px;
+  }
+}
+
+.contacts-list-item {
+  font-family: Abel;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  font-size: 12px;
+  line-height: 14.4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (min-width: 744px) {
+  .contacts-list-item {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contacts-list-item {
+    font-size: 16px;
+    line-height: 19.2px;
   }
 }
 
