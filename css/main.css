@@ -844,6 +844,8 @@ h1, h2, h3, h4, h5, h6, p {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .services-list-item {
@@ -855,6 +857,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding-bottom: 40px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  max-width: 320px;
 }
 .services-list-item:hover {
   background-color: #FFFFFF;

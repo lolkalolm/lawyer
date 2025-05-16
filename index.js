@@ -6,7 +6,7 @@ const prevBtn = document.querySelector(".left-arrow-btn");
 const nextBtn = document.querySelector(".right-arrow-btn");
 const listOfImages = document.querySelector(".services-list");
 let currentSlide = 0;
-const slideWidth = 800; // Ширина одного слайду (важливо для руху)
+const slideWidth = 400; // Ширина одного слайду (важливо для руху)
 
 function moveSlides(position) {
   const totalSlides = listOfImages.children.length;
