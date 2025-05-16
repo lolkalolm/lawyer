@@ -843,11 +843,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (min-width: 1199px) {
-  .services-list {
-    gap: 4px;
-  }
+  gap: 10px;
 }
 
 .services-list-item {
@@ -862,8 +858,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .services-list-item:hover {
   background-color: #FFFFFF;
-  -webkit-transform: scaleY(1.2);
-          transform: scaleY(1.2);
   cursor: pointer;
 }
 .services-list-item:hover .services-list-title {
@@ -903,4 +897,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .services-sub-list-item:not(:first-child) {
   margin-top: 10px;
+}
+
+.right-arrow-btn {
+  background-color: transparent;
+}
+
+.left-arrow-btn {
+  background-color: transparent;
+}
+
+.arrow-btn-wrap {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

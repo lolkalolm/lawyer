@@ -39,12 +39,8 @@
 }
 .services-list{
     display: flex;
-    @include tab(744px){
-       
-    }
-    @include desc(1199px){
-   gap: 4px;
-    }
+    gap: 10px;
+
 }
 .services-list-item{
     background-color: #FFFFFF26;
@@ -64,7 +60,7 @@
     }
     &:hover{
         background-color: #FFFFFF;
-        transform: scaleY(1.2);
+
         cursor: pointer;
     .services-list-title{
         color: black;
@@ -108,4 +104,15 @@
     &:not(:first-child){
         margin-top: 10px;
     }
+}
+.right-arrow-btn{
+    background-color: transparent;
+
+}
+.left-arrow-btn{
+    background-color: transparent;
+
+}
+.arrow-btn-wrap{
+    margin-bottom: 10px;
 }
