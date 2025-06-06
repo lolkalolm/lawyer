@@ -45,7 +45,7 @@ font-weight: 400;
 .hero{
     background-repeat: no-repeat;
  background-size: cover;
-        padding-top: 122px;
+        padding-top: 27px;
     padding-bottom: 76px;
     @include bg-image ("../phone-img/phone-x1-hero.webp" , "../phone-img/phone-x1-hero.jpg");
     @include retina (2, 192dpi, 2dppx){
@@ -112,4 +112,48 @@ letter-spacing: -0.02em;
 
 }
 
+.links-wrap{
+display: flex;
+justify-content: end;
+align-items: end;
+margin-bottom: 81px;
+gap: 17px;
 
+@include tab(744px){
+  display: none;
+}
+
+}
+
+.phone-number{
+
+    font-family: Abel;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+letter-spacing: -2%;
+color: #FFFFFF;
+
+@include tab(744px){
+  display: none;
+}
+
+}
+
+.telegram-link{
+background-color: #1668E3;
+font-family: Abel;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+letter-spacing: 0%;
+color: #FFFFFF;
+border-radius: 40px;
+padding-top: 3px;
+padding-left: 30px;
+padding-right: 30px;
+padding-bottom: 7px;
+@include tab(744px){
+  display: none;
+}
+}

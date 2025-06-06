@@ -604,7 +604,7 @@ h1, h2, h3, h4, h5, h6, p {
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 122px;
+  padding-top: 27px;
   padding-bottom: 76px;
   background-image: url("../phone-img/phone-x1-hero.jpg");
 }
@@ -738,6 +738,59 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (min-width: 1199px) {
   .hero-text-wrap {
     gap: 46px;
+  }
+}
+
+.links-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 81px;
+  gap: 17px;
+}
+@media screen and (min-width: 744px) {
+  .links-wrap {
+    display: none;
+  }
+}
+
+.phone-number {
+  font-family: Abel;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: -2%;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 744px) {
+  .phone-number {
+    display: none;
+  }
+}
+
+.telegram-link {
+  background-color: #1668E3;
+  font-family: Abel;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  border-radius: 40px;
+  padding-top: 3px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 7px;
+}
+@media screen and (min-width: 744px) {
+  .telegram-link {
+    display: none;
   }
 }
 
