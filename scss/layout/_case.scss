@@ -4,17 +4,19 @@ color:#FFFFFF ;
 font-weight: 400;
 line-height: 54px;
 letter-spacing: -0.02em;
-
+     margin: 0 auto;
     font-size: 54px; 
     margin-bottom: 41px;
-
+ max-width: 214px;
 @include tab(744px){
     font-size: 57px;
     margin-bottom: 47px;
+    max-width: none;
 }
 @include desc(1199px){
     font-size: 60px;
     margin-bottom: 69px;
+    max-width: none;
 }
 }
 .case-list-text{
