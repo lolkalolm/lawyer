@@ -563,6 +563,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 48px;
   margin-bottom: 329px;
   max-width: 309px;
+  margin-top: 122px;
 }
 @media screen and (min-width: 744px) {
   .hero-title {
@@ -766,7 +767,7 @@ h1, h2, h3, h4, h5, h6, p {
 .phone-number {
   font-family: Abel;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 22px;
   line-height: 120%;
   letter-spacing: -2%;
   color: #FFFFFF;
@@ -776,7 +777,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #1668E3;
   font-family: Abel;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 22px;
   line-height: 120%;
   letter-spacing: 0%;
   color: #FFFFFF;
